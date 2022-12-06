@@ -1,0 +1,7 @@
+name = input("What is the new patients name?: ")
+age_ = input("What is the patients age?: ")
+patient_name = name
+patient_age = age_
+new_p = input("Is this patient new?: ")
+new_or_not = new_p
+print(patient_name + " is " + patient_age + " Year's old. Is patient new? " + new_or_not)
