@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.1 (Python 3.11.0 on win32)" generated="20221216 00:45:51.345" rpa="false" schemaversion="3">
+<suite id="s1" name="Daraz" source="f:\Industrial-Attachment\week 2 (11.12.2022-15.12.2022)\day 5_15.12.2022\tasmia\daraz.robot">
+<test id="s1-t1" name="login" line="7">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.daraz.com.bd/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221216 00:45:52.738" level="INFO">Opening browser 'chrome' to base url 'https://www.daraz.com.bd/'.</msg>
+<status status="PASS" starttime="20221216 00:45:52.731" endtime="20221216 00:46:09.517"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221216 00:46:09.521" endtime="20221216 00:46:10.039"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221216 00:46:12.059" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221216 00:46:10.056" endtime="20221216 00:46:12.061"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=q</arg>
+<arg>${search}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221216 00:46:12.066" level="INFO">Typing text 'mouse' into text field 'name=q'.</msg>
+<status status="PASS" starttime="20221216 00:46:12.065" endtime="20221216 00:46:15.590"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221216 00:46:17.597" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221216 00:46:15.594" endtime="20221216 00:46:17.598"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id='topActionHeader']/div/div[2]/div/div[2]/form/div/div[2]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221216 00:46:17.609" level="INFO">Clicking element 'xpath=//*[@id='topActionHeader']/div/div[2]/div/div[2]/form/div/div[2]/button'.</msg>
+<status status="PASS" starttime="20221216 00:46:17.606" endtime="20221216 00:46:24.060"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221216 00:46:26.099" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221216 00:46:24.094" endtime="20221216 00:46:26.100"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//body/div[@id='root']/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/span[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221216 00:46:26.115" level="INFO">Clicking element 'xpath=//body/div[@id='root']/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/span[1]'.</msg>
+<status status="PASS" starttime="20221216 00:46:26.104" endtime="20221216 00:46:26.752"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221216 00:46:28.760" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221216 00:46:26.755" endtime="20221216 00:46:28.761"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=/html/body/div[6]/div/div/div/ul/li[3]/div</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221216 00:46:28.770" level="INFO">Clicking element 'xpath=/html/body/div[6]/div/div/div/ul/li[3]/div'.</msg>
+<status status="PASS" starttime="20221216 00:46:28.765" endtime="20221216 00:46:29.186"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221216 00:46:31.204" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221216 00:46:29.200" endtime="20221216 00:46:31.206"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id='root']/div/div[2]/div/div/div[1]/div[2]/div[1]/div/div/div[1]/div/a/img</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221216 00:46:31.233" level="INFO">Clicking element 'xpath=//*[@id='root']/div/div[2]/div/div/div[1]/div[2]/div[1]/div/div/div[1]/div/a/img'.</msg>
+<status status="PASS" starttime="20221216 00:46:31.227" endtime="20221216 00:46:40.938"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221216 00:46:42.948" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221216 00:46:40.943" endtime="20221216 00:46:42.950"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath=//body/div[@id='container']/div[@id='root']/div[@id='block-F4KXhLDUKR']/div[@id='block-w3Jz3V-dNP']/div[@id='block-nmb82fpO-P']/div[@id='block-sWqtrZRyI2']/div[@id='module_add_to_cart']/div[1]/button[2]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221216 00:46:42.967" level="INFO">Clicking button 'xpath=//body/div[@id='container']/div[@id='root']/div[@id='block-F4KXhLDUKR']/div[@id='block-w3Jz3V-dNP']/div[@id='block-nmb82fpO-P']/div[@id='block-sWqtrZRyI2']/div[@id='module_add_to_cart']/div[1]/button[2]'.</msg>
+<status status="PASS" starttime="20221216 00:46:42.955" endtime="20221216 00:46:43.192"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221216 00:46:45.206" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221216 00:46:43.202" endtime="20221216 00:46:45.207"/>
+</kw>
+<status status="PASS" starttime="20221216 00:45:52.726" endtime="20221216 00:46:45.211"/>
+</test>
+<status status="PASS" starttime="20221216 00:45:51.360" endtime="20221216 00:46:45.218"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Daraz">Daraz</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
