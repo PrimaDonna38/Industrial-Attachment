@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.1 (Python 3.11.0 on win32)" generated="20221228 15:22:52.462" rpa="false" schemaversion="3">
+<suite id="s1" name="Robot Interactive Console" source="c:\Users\User\.vscode\extensions\robocorp.robotframework-lsp-1.7.3\src\robotframework_ls\vendored\robotframework_interactive\robot_interactive_console.robot">
+<test id="s1-t1" name="Default Task/Test" line="5">
+<kw name="Interpreter Main Loop" library="MainLoop">
+<kw name="Open Browser">
+<arg>http://192.168.1.9:8080/caab/login</arg>
+<arg>chrome</arg>
+<msg timestamp="20221228 15:22:53.904" level="FAIL">No keyword with name 'Open Browser' found.</msg>
+<status status="FAIL" starttime="20221228 15:22:53.904" endtime="20221228 15:22:53.904"/>
+</kw>
+<kw name="Maximize Browser Window">
+<status status="NOT RUN" starttime="20221228 15:22:53.914" endtime="20221228 15:22:53.914"/>
+</kw>
+<kw name="Input Text">
+<arg>name=username</arg>
+<arg>${user}</arg>
+<status status="NOT RUN" starttime="20221228 15:22:53.918" endtime="20221228 15:22:53.918"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221228 15:22:53.918" endtime="20221228 15:22:53.918"/>
+</kw>
+<kw name="Input Password">
+<arg>name=password</arg>
+<arg>${pasword}</arg>
+<status status="NOT RUN" starttime="20221228 15:22:53.923" endtime="20221228 15:22:53.924"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221228 15:22:53.924" endtime="20221228 15:22:53.924"/>
+</kw>
+<kw name="Click Element">
+<arg>xpath=//body/div[@id='middle']/div[@id='login_panel']/div[2]/div[2]/form[1]/div[5]/div[1]/select[1]</arg>
+<status status="NOT RUN" starttime="20221228 15:22:53.929" endtime="20221228 15:22:53.929"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221228 15:22:53.929" endtime="20221228 15:22:53.929"/>
+</kw>
+<kw name="Click Element">
+<arg>xpath=//option[contains(text(),'0007 - Hazrat Shahjalal International Airport')]</arg>
+<status status="NOT RUN" starttime="20221228 15:22:53.930" endtime="20221228 15:22:53.930"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221228 15:22:53.930" endtime="20221228 15:22:53.930"/>
+</kw>
+<kw name="Click Button">
+<arg>xpath=//input[@id='submit']</arg>
+<status status="NOT RUN" starttime="20221228 15:22:53.937" endtime="20221228 15:22:53.937"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221228 15:22:53.937" endtime="20221228 15:22:53.937"/>
+</kw>
+<kw name="Location Should Be">
+<arg>http://192.168.1.9:8080/caab/home</arg>
+<status status="NOT RUN" starttime="20221228 15:22:53.937" endtime="20221228 15:22:53.937"/>
+</kw>
+<kw name="Click Element">
+<arg>xpath=//a[contains(text(),'Human Resource')]</arg>
+<status status="NOT RUN" starttime="20221228 15:22:53.949" endtime="20221228 15:22:53.949"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221228 15:22:53.949" endtime="20221228 15:22:53.949"/>
+</kw>
+<kw name="Click Element">
+<arg>xpath=//a[contains(text(),'HR Payroll')]</arg>
+<status status="NOT RUN" starttime="20221228 15:22:53.954" endtime="20221228 15:22:53.954"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221228 15:22:53.954" endtime="20221228 15:22:53.954"/>
+</kw>
+<kw name="Click Element">
+<arg>xpath=//body/div[@id='resizeContainer']/div[@id='resizeMenu']/div[@id='mCSB_1']/div[1]/div[1]/div[5]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/h4[1]/a[1]</arg>
+<status status="NOT RUN" starttime="20221228 15:22:53.956" endtime="20221228 15:22:53.956"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221228 15:22:53.956" endtime="20221228 15:22:53.956"/>
+</kw>
+<kw name="Click Element">
+<arg>xpath=//body/div[@id='resizeContainer']/div[@id='resizeMenu']/div[@id='mCSB_1']/div[1]/div[1]/div[5]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[4]/a[1]</arg>
+<status status="NOT RUN" starttime="20221228 15:22:53.965" endtime="20221228 15:22:53.965"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221228 15:22:53.965" endtime="20221228 15:22:53.965"/>
+</kw>
+<kw name="Click Element">
+<arg>xpath=//a[contains(text(),'Deductions')]</arg>
+<status status="NOT RUN" starttime="20221228 15:22:53.970" endtime="20221228 15:22:53.970"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221228 15:22:53.970" endtime="20221228 15:22:53.972"/>
+</kw>
+<kw name="Location Should Be">
+<arg>http://192.168.1.9:8080/caab/hrpAllowanceDeduction</arg>
+<status status="NOT RUN" starttime="20221228 15:22:53.975" endtime="20221228 15:22:53.975"/>
+</kw>
+<kw name="Get File">
+<var>${input}</var>
+<arg>F:/CAAB/AllowanceDeduction.txt</arg>
+<status status="NOT RUN" starttime="20221228 15:22:53.977" endtime="20221228 15:22:53.977"/>
+</kw>
+<kw name="Split String">
+<var>${variable1}</var>
+<var>${variable2}</var>
+<var>${variable3}</var>
+<var>${variable4}</var>
+<var>${variable5}</var>
+<var>${variable6}</var>
+<var>${variable7}</var>
+<var>${variable8}</var>
+<var>${variable9}</var>
+<var>${variable10}</var>
+<var>${variable11}</var>
+<var>${variable12}</var>
+<var>${variable13}</var>
+<var>${variable14}</var>
+<var>${variable15}</var>
+<arg>${input}</arg>
+<status status="NOT RUN" starttime="20221228 15:22:53.983" endtime="20221228 15:22:53.983"/>
+</kw>
+<kw name="Click Element">
+<arg>xpath=//select[@id='month']</arg>
+<status status="NOT RUN" starttime="20221228 15:22:53.987" endtime="20221228 15:22:53.987"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221228 15:22:53.987" endtime="20221228 15:22:53.987"/>
+</kw>
+<kw name="Click Element">
+<arg>xpath=//option[contains(text(),'${variable1}')]</arg>
+<status status="NOT RUN" starttime="20221228 15:22:53.987" endtime="20221228 15:22:53.987"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221228 15:22:53.987" endtime="20221228 15:22:53.987"/>
+</kw>
+<kw name="Click Element">
+<arg>xpath=//select[@id='year']</arg>
+<status status="NOT RUN" starttime="20221228 15:22:53.987" endtime="20221228 15:22:53.987"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221228 15:22:53.987" endtime="20221228 15:22:53.987"/>
+</kw>
+<kw name="Click Element">
+<arg>xpath=//option[contains(text(),'${variable2}')]</arg>
+<status status="NOT RUN" starttime="20221228 15:22:53.987" endtime="20221228 15:22:53.995"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221228 15:22:53.995" endtime="20221228 15:22:53.995"/>
+</kw>
+<kw name="Input Text">
+<arg>name=employeeId</arg>
+<arg>${variable3}</arg>
+<status status="NOT RUN" starttime="20221228 15:22:53.997" endtime="20221228 15:22:53.997"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221228 15:22:53.997" endtime="20221228 15:22:53.998"/>
+</kw>
+<kw name="Click Element">
+<arg>xpath=//input[@id='groupInsurance']</arg>
+<status status="NOT RUN" starttime="20221228 15:22:53.999" endtime="20221228 15:22:53.999"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221228 15:22:53.999" endtime="20221228 15:22:53.999"/>
+</kw>
+<kw name="Input Text">
+<arg>name=groupInsurance</arg>
+<arg>${variable4}</arg>
+<status status="NOT RUN" starttime="20221228 15:22:54.001" endtime="20221228 15:22:54.001"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221228 15:22:54.001" endtime="20221228 15:22:54.001"/>
+</kw>
+<kw name="Input Text">
+<arg>name=benevolentFund</arg>
+<arg>${variable5}</arg>
+<status status="NOT RUN" starttime="20221228 15:22:54.006" endtime="20221228 15:22:54.006"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221228 15:22:54.007" endtime="20221228 15:22:54.007"/>
+</kw>
+<kw name="Input Text">
+<arg>name=gPFAmount</arg>
+<arg>${variable2}</arg>
+<status status="NOT RUN" starttime="20221228 15:22:54.009" endtime="20221228 15:22:54.009"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221228 15:22:54.009" endtime="20221228 15:22:54.009"/>
+</kw>
+<kw name="Input Text">
+<arg>name=gPFAmountAccountNo</arg>
+<arg>${variable7}</arg>
+<status status="NOT RUN" starttime="20221228 15:22:54.011" endtime="20221228 15:22:54.011"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221228 15:22:54.011" endtime="20221228 15:22:54.011"/>
+</kw>
+<kw name="Input Text">
+<arg>name=incomeTax</arg>
+<arg>${variable8}</arg>
+<status status="NOT RUN" starttime="20221228 15:22:54.013" endtime="20221228 15:22:54.013"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221228 15:22:54.013" endtime="20221228 15:22:54.013"/>
+</kw>
+<kw name="Input Text">
+<arg>name=houseRent</arg>
+<arg>${variable9}</arg>
+<status status="NOT RUN" starttime="20221228 15:22:54.013" endtime="20221228 15:22:54.013"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221228 15:22:54.013" endtime="20221228 15:22:54.013"/>
+</kw>
+<kw name="Input text">
+<arg>name=houseRentMaintenance</arg>
+<arg>${variable10}</arg>
+<status status="NOT RUN" starttime="20221228 15:22:54.013" endtime="20221228 15:22:54.013"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221228 15:22:54.013" endtime="20221228 15:22:54.013"/>
+</kw>
+<kw name="Input Text">
+<arg>name=electricalBill</arg>
+<arg>${variable11}</arg>
+<status status="NOT RUN" starttime="20221228 15:22:54.013" endtime="20221228 15:22:54.013"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221228 15:22:54.013" endtime="20221228 15:22:54.013"/>
+</kw>
+<kw name="Input Text">
+<arg>name=waterAndSewerageBill</arg>
+<arg>${variable12}</arg>
+<status status="NOT RUN" starttime="20221228 15:22:54.013" endtime="20221228 15:22:54.013"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221228 15:22:54.013" endtime="20221228 15:22:54.021"/>
+</kw>
+<kw name="Input Text">
+<arg>name=gas</arg>
+<arg>${variable13}</arg>
+<status status="NOT RUN" starttime="20221228 15:22:54.026" endtime="20221228 15:22:54.026"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221228 15:22:54.026" endtime="20221228 15:22:54.026"/>
+</kw>
+<kw name="Input Text">
+<arg>name=mtCharge</arg>
+<arg>${variable14}</arg>
+<status status="NOT RUN" starttime="20221228 15:22:54.028" endtime="20221228 15:22:54.028"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221228 15:22:54.028" endtime="20221228 15:22:54.028"/>
+</kw>
+<kw name="Input Text">
+<arg>name=stampFee</arg>
+<arg>${variable15}</arg>
+<status status="NOT RUN" starttime="20221228 15:22:54.029" endtime="20221228 15:22:54.029"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221228 15:22:54.029" endtime="20221228 15:22:54.029"/>
+</kw>
+<kw name="Click Button">
+<arg>id=btnSaveDeduction</arg>
+<status status="NOT RUN" starttime="20221228 15:22:54.029" endtime="20221228 15:22:54.029"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221228 15:22:54.029" endtime="20221228 15:22:54.029"/>
+</kw>
+<status status="PASS" starttime="20221228 15:22:52.514" endtime="20221228 15:22:55.645"/>
+</kw>
+<status status="PASS" starttime="20221228 15:22:52.513" endtime="20221228 15:22:55.645"/>
+</test>
+<status status="PASS" starttime="20221228 15:22:52.466" endtime="20221228 15:22:55.648"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Robot Interactive Console">Robot Interactive Console</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
