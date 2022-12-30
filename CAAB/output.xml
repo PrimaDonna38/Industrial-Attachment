@@ -1,322 +1,475 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.1 (Python 3.11.0 on win32)" generated="20221228 16:51:16.822" rpa="false" schemaversion="3">
-<suite id="s1" name="EmployeeCreation" source="F:\CAAB\EmployeeCreation.robot">
-<test id="s1-t1" name="login" line="13">
+<robot generator="Robot 6.0.1 (Python 3.11.0 on win32)" generated="20221229 13:03:40.939" rpa="false" schemaversion="3">
+<suite id="s1" name="Allowancededuction" source="f:\CAAB\allowancededuction.robot">
+<test id="s1-t1" name="login" line="11">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>http://192.168.1.9:8080/caab/login</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20221228 16:51:17.808" level="INFO">Opening browser 'chrome' to base url 'http://192.168.1.9:8080/caab/login'.</msg>
-<status status="PASS" starttime="20221228 16:51:17.804" endtime="20221228 16:51:21.733"/>
+<msg timestamp="20221229 13:03:41.997" level="INFO">Opening browser 'chrome' to base url 'http://192.168.1.9:8080/caab/login'.</msg>
+<status status="PASS" starttime="20221229 13:03:41.989" endtime="20221229 13:03:45.512"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20221228 16:51:21.738" endtime="20221228 16:51:21.871"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20221228 16:51:23.875" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20221228 16:51:21.871" endtime="20221228 16:51:23.876"/>
+<status status="PASS" starttime="20221229 13:03:45.515" endtime="20221229 13:03:45.752"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>name=username</arg>
-<arg>test1</arg>
+<arg>${user}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221228 16:51:23.897" level="INFO">Typing text 'test1' into text field 'name=username'.</msg>
-<status status="PASS" starttime="20221228 16:51:23.880" endtime="20221228 16:51:24.189"/>
+<msg timestamp="20221229 13:03:45.763" level="INFO">Typing text 'ayesha' into text field 'name=username'.</msg>
+<status status="PASS" starttime="20221229 13:03:45.757" endtime="20221229 13:03:45.936"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
-<arg>2s</arg>
+<arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20221228 16:51:26.193" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20221228 16:51:24.192" endtime="20221228 16:51:26.194"/>
+<msg timestamp="20221229 13:03:46.942" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20221229 13:03:45.939" endtime="20221229 13:03:46.943"/>
 </kw>
 <kw name="Input Password" library="SeleniumLibrary">
 <arg>name=password</arg>
-<arg>123456</arg>
+<arg>${pasword}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<msg timestamp="20221228 16:51:26.197" level="INFO">Typing password into text field 'name=password'.</msg>
-<msg timestamp="20221228 16:51:26.305" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20221228 16:51:26.387" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20221228 16:51:26.196" endtime="20221228 16:51:26.388"/>
+<msg timestamp="20221229 13:03:46.949" level="INFO">Typing password into text field 'name=password'.</msg>
+<msg timestamp="20221229 13:03:47.028" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20221229 13:03:47.111" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20221229 13:03:46.946" endtime="20221229 13:03:47.112"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
-<arg>2s</arg>
+<arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20221228 16:51:28.389" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20221228 16:51:26.389" endtime="20221228 16:51:28.389"/>
+<msg timestamp="20221229 13:03:48.118" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20221229 13:03:47.115" endtime="20221229 13:03:48.120"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=//body/div[@id='middle']/div[@id='login_panel']/div[2]/div[2]/form[1]/div[5]/div[1]/select[1]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221228 16:51:28.394" level="INFO">Clicking element 'xpath=//body/div[@id='middle']/div[@id='login_panel']/div[2]/div[2]/form[1]/div[5]/div[1]/select[1]'.</msg>
-<status status="PASS" starttime="20221228 16:51:28.389" endtime="20221228 16:51:28.532"/>
+<msg timestamp="20221229 13:03:48.132" level="INFO">Clicking element 'xpath=//body/div[@id='middle']/div[@id='login_panel']/div[2]/div[2]/form[1]/div[5]/div[1]/select[1]'.</msg>
+<status status="PASS" starttime="20221229 13:03:48.127" endtime="20221229 13:03:48.432"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
-<arg>2s</arg>
+<arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20221228 16:51:30.536" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20221228 16:51:28.533" endtime="20221228 16:51:30.536"/>
+<msg timestamp="20221229 13:03:49.468" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20221229 13:03:48.464" endtime="20221229 13:03:49.470"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=//option[contains(text(),'0007 - Hazrat Shahjalal International Airport')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221228 16:51:30.540" level="INFO">Clicking element 'xpath=//option[contains(text(),'0007 - Hazrat Shahjalal International Airport')]'.</msg>
-<status status="PASS" starttime="20221228 16:51:30.536" endtime="20221228 16:51:30.633"/>
+<msg timestamp="20221229 13:03:49.476" level="INFO">Clicking element 'xpath=//option[contains(text(),'0007 - Hazrat Shahjalal International Airport')]'.</msg>
+<status status="PASS" starttime="20221229 13:03:49.473" endtime="20221229 13:03:49.594"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
-<arg>2s</arg>
+<arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20221228 16:51:32.636" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20221228 16:51:30.635" endtime="20221228 16:51:32.636"/>
+<msg timestamp="20221229 13:03:50.610" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20221229 13:03:49.606" endtime="20221229 13:03:50.610"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>xpath=//input[@id='submit']</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20221228 16:51:32.636" level="INFO">Clicking button 'xpath=//input[@id='submit']'.</msg>
-<status status="PASS" starttime="20221228 16:51:32.636" endtime="20221228 16:51:41.451"/>
+<msg timestamp="20221229 13:03:50.619" level="INFO">Clicking button 'xpath=//input[@id='submit']'.</msg>
+<status status="PASS" starttime="20221229 13:03:50.613" endtime="20221229 13:04:13.813"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
-<arg>2s</arg>
+<arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20221228 16:51:43.455" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20221228 16:51:41.453" endtime="20221228 16:51:43.456"/>
+<msg timestamp="20221229 13:04:14.819" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20221229 13:04:13.816" endtime="20221229 13:04:14.820"/>
 </kw>
 <kw name="Location Should Be" library="SeleniumLibrary">
 <arg>http://192.168.1.9:8080/caab/home</arg>
 <doc>Verifies that the current URL is exactly ``url``.</doc>
-<msg timestamp="20221228 16:51:43.513" level="INFO">Current location is 'http://192.168.1.9:8080/caab/home'.</msg>
-<status status="PASS" starttime="20221228 16:51:43.456" endtime="20221228 16:51:43.514"/>
+<msg timestamp="20221229 13:04:14.846" level="INFO">Current location is 'http://192.168.1.9:8080/caab/home'.</msg>
+<status status="PASS" starttime="20221229 13:04:14.827" endtime="20221229 13:04:14.848"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=//a[contains(text(),'Human Resource')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221228 16:51:43.528" level="INFO">Clicking element 'xpath=//a[contains(text(),'Human Resource')]'.</msg>
-<status status="PASS" starttime="20221228 16:51:43.517" endtime="20221228 16:51:43.666"/>
+<msg timestamp="20221229 13:04:14.853" level="INFO">Clicking element 'xpath=//a[contains(text(),'Human Resource')]'.</msg>
+<status status="PASS" starttime="20221229 13:04:14.850" endtime="20221229 13:04:14.965"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
-<arg>2s</arg>
+<arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20221228 16:51:45.668" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20221228 16:51:43.667" endtime="20221228 16:51:45.670"/>
+<msg timestamp="20221229 13:04:15.972" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20221229 13:04:14.969" endtime="20221229 13:04:15.978"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>xpath=//a[contains(text(),'HR Admin')]</arg>
+<arg>xpath=//a[contains(text(),'HR Payroll')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221228 16:51:45.692" level="INFO">Clicking element 'xpath=//a[contains(text(),'HR Admin')]'.</msg>
-<status status="PASS" starttime="20221228 16:51:45.676" endtime="20221228 16:51:45.970"/>
+<msg timestamp="20221229 13:04:15.993" level="INFO">Clicking element 'xpath=//a[contains(text(),'HR Payroll')]'.</msg>
+<status status="PASS" starttime="20221229 13:04:15.985" endtime="20221229 13:04:16.103"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
-<arg>2s</arg>
+<arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20221228 16:51:48.002" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20221228 16:51:45.997" endtime="20221228 16:51:48.003"/>
+<msg timestamp="20221229 13:04:17.112" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20221229 13:04:16.108" endtime="20221229 13:04:17.113"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>xpath=//body/div[@id='resizeContainer']/div[@id='resizeMenu']/div[@id='mCSB_1']/div[1]/div[1]/div[5]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/h4[1]/a[1]</arg>
+<arg>xpath=//body/div[@id='resizeContainer']/div[@id='resizeMenu']/div[@id='mCSB_1']/div[1]/div[1]/div[5]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/h4[1]/a[1]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221228 16:51:48.020" level="INFO">Clicking element 'xpath=//body/div[@id='resizeContainer']/div[@id='resizeMenu']/div[@id='mCSB_1']/div[1]/div[1]/div[5]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/h4[1]/a[1]'.</msg>
-<status status="PASS" starttime="20221228 16:51:48.004" endtime="20221228 16:51:48.330"/>
+<msg timestamp="20221229 13:04:17.118" level="INFO">Clicking element 'xpath=//body/div[@id='resizeContainer']/div[@id='resizeMenu']/div[@id='mCSB_1']/div[1]/div[1]/div[5]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/h4[1]/a[1]'.</msg>
+<status status="PASS" starttime="20221229 13:04:17.116" endtime="20221229 13:04:17.216"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
-<arg>2s</arg>
+<arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20221228 16:51:50.335" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20221228 16:51:48.332" endtime="20221228 16:51:50.337"/>
+<msg timestamp="20221229 13:04:18.220" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20221229 13:04:17.218" endtime="20221229 13:04:18.222"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>xpath=//a[contains(text(),'Employee ID Creation')]</arg>
+<arg>xpath=//body/div[@id='resizeContainer']/div[@id='resizeMenu']/div[@id='mCSB_1']/div[1]/div[1]/div[5]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[4]/a[1]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221228 16:51:50.353" level="INFO">Clicking element 'xpath=//a[contains(text(),'Employee ID Creation')]'.</msg>
-<status status="PASS" starttime="20221228 16:51:50.347" endtime="20221228 16:52:19.097"/>
+<msg timestamp="20221229 13:04:18.231" level="INFO">Clicking element 'xpath=//body/div[@id='resizeContainer']/div[@id='resizeMenu']/div[@id='mCSB_1']/div[1]/div[1]/div[5]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[4]/a[1]'.</msg>
+<status status="PASS" starttime="20221229 13:04:18.227" endtime="20221229 13:04:27.470"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221229 13:04:28.481" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20221229 13:04:27.474" endtime="20221229 13:04:28.484"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//a[contains(text(),'Deductions')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221229 13:04:28.506" level="INFO">Clicking element 'xpath=//a[contains(text(),'Deductions')]'.</msg>
+<status status="PASS" starttime="20221229 13:04:28.496" endtime="20221229 13:04:28.602"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221229 13:04:29.611" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20221229 13:04:28.606" endtime="20221229 13:04:29.613"/>
+</kw>
+<kw name="Location Should Be" library="SeleniumLibrary">
+<arg>http://192.168.1.9:8080/caab/hrpAllowanceDeduction</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<msg timestamp="20221229 13:04:29.656" level="INFO">Current location is 'http://192.168.1.9:8080/caab/hrpAllowanceDeduction'.</msg>
+<status status="PASS" starttime="20221229 13:04:29.620" endtime="20221229 13:04:29.659"/>
+</kw>
+<kw name="Get File" library="OperatingSystem">
+<var>${input}</var>
+<arg>AllowanceDeduction.txt</arg>
+<doc>Returns the contents of a specified file.</doc>
+<msg timestamp="20221229 13:04:29.664" level="INFO" html="true">Getting file '&lt;a href="file://F:\CAAB\AllowanceDeduction.txt"&gt;F:\CAAB\AllowanceDeduction.txt&lt;/a&gt;'.</msg>
+<msg timestamp="20221229 13:04:29.667" level="INFO">${input} = May
+2022
+343554
+0
+45
+0
+0
+0
+45
+0
+0
+34
+0
+0
+0</msg>
+<status status="PASS" starttime="20221229 13:04:29.663" endtime="20221229 13:04:29.669"/>
+</kw>
+<kw name="Split String" library="String">
+<var>${variable1}</var>
+<var>${variable2}</var>
+<var>${variable3}</var>
+<var>${variable4}</var>
+<var>${variable5}</var>
+<var>${variable6}</var>
+<var>${variable7}</var>
+<var>${variable8}</var>
+<var>${variable9}</var>
+<var>${variable10}</var>
+<var>${variable11}</var>
+<var>${variable12}</var>
+<var>${variable13}</var>
+<var>${variable14}</var>
+<var>${variable15}</var>
+<arg>${input}</arg>
+<arg>\n</arg>
+<doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
+<msg timestamp="20221229 13:04:29.676" level="INFO">${variable1} = May</msg>
+<msg timestamp="20221229 13:04:29.676" level="INFO">${variable2} = 2022</msg>
+<msg timestamp="20221229 13:04:29.677" level="INFO">${variable3} = 343554</msg>
+<msg timestamp="20221229 13:04:29.677" level="INFO">${variable4} = 0</msg>
+<msg timestamp="20221229 13:04:29.678" level="INFO">${variable5} = 45</msg>
+<msg timestamp="20221229 13:04:29.678" level="INFO">${variable6} = 0</msg>
+<msg timestamp="20221229 13:04:29.679" level="INFO">${variable7} = 0</msg>
+<msg timestamp="20221229 13:04:29.680" level="INFO">${variable8} = 0</msg>
+<msg timestamp="20221229 13:04:29.680" level="INFO">${variable9} = 45</msg>
+<msg timestamp="20221229 13:04:29.681" level="INFO">${variable10} = 0</msg>
+<msg timestamp="20221229 13:04:29.681" level="INFO">${variable11} = 0</msg>
+<msg timestamp="20221229 13:04:29.682" level="INFO">${variable12} = 34</msg>
+<msg timestamp="20221229 13:04:29.682" level="INFO">${variable13} = 0</msg>
+<msg timestamp="20221229 13:04:29.682" level="INFO">${variable14} = 0</msg>
+<msg timestamp="20221229 13:04:29.687" level="INFO">${variable15} = 0</msg>
+<status status="PASS" starttime="20221229 13:04:29.672" endtime="20221229 13:04:29.687"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>4s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20221228 16:52:23.105" level="INFO">Slept 4 seconds</msg>
-<status status="PASS" starttime="20221228 16:52:19.101" endtime="20221228 16:52:23.106"/>
-</kw>
-<kw name="Get File" library="OperatingSystem">
-<var>${input}</var>
-<arg>EmployeeCreation.txt</arg>
-<doc>Returns the contents of a specified file.</doc>
-<msg timestamp="20221228 16:52:23.109" level="INFO" html="true">Getting file '&lt;a href="file://F:\CAAB\EmployeeCreation.txt"&gt;F:\CAAB\EmployeeCreation.txt&lt;/a&gt;'.</msg>
-<msg timestamp="20221228 16:52:23.115" level="INFO">${input} = raphyyy
-raphyyy
-2016
-avatar.png</msg>
-<status status="PASS" starttime="20221228 16:52:23.109" endtime="20221228 16:52:23.115"/>
-</kw>
-<kw name="Split String" library="String">
-<var>${English}</var>
-<var>${Bangla}</var>
-<var>${year}</var>
-<var>${picture}</var>
-<arg>${input}</arg>
-<doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
-<msg timestamp="20221228 16:52:23.131" level="INFO">${English} = raphyyy</msg>
-<msg timestamp="20221228 16:52:23.131" level="INFO">${Bangla} = raphyyy</msg>
-<msg timestamp="20221228 16:52:23.131" level="INFO">${year} = 2016</msg>
-<msg timestamp="20221228 16:52:23.131" level="INFO">${picture} = avatar.png</msg>
-<status status="PASS" starttime="20221228 16:52:23.124" endtime="20221228 16:52:23.131"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>Xpath=//input[@id='employeeNameEnglish']</arg>
-<arg>${English}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221228 16:52:23.150" level="INFO">Typing text 'raphyyy' into text field 'Xpath=//input[@id='employeeNameEnglish']'.</msg>
-<status status="PASS" starttime="20221228 16:52:23.144" endtime="20221228 16:52:23.558"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20221228 16:52:25.564" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20221228 16:52:23.564" endtime="20221228 16:52:25.567"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>Xpath=//input[@id='employeeNameBangla']</arg>
-<arg>${Bangla}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221228 16:52:25.589" level="INFO">Typing text 'raphyyy' into text field 'Xpath=//input[@id='employeeNameBangla']'.</msg>
-<status status="PASS" starttime="20221228 16:52:25.577" endtime="20221228 16:52:26.078"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20221228 16:52:28.082" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20221228 16:52:26.081" endtime="20221228 16:52:28.084"/>
+<msg timestamp="20221229 13:04:33.701" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20221229 13:04:29.698" endtime="20221229 13:04:33.707"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>Xpath=//select[@id='joinYear']</arg>
+<arg>xpath=//select[@id='month']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221228 16:52:28.094" level="INFO">Clicking element 'Xpath=//select[@id='joinYear']'.</msg>
-<status status="PASS" starttime="20221228 16:52:28.089" endtime="20221228 16:52:28.460"/>
+<msg timestamp="20221229 13:04:33.740" level="INFO">Clicking element 'xpath=//select[@id='month']'.</msg>
+<status status="PASS" starttime="20221229 13:04:33.724" endtime="20221229 13:04:33.840"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20221228 16:52:30.464" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20221228 16:52:28.462" endtime="20221228 16:52:30.465"/>
+<msg timestamp="20221229 13:04:35.846" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221229 13:04:33.844" endtime="20221229 13:04:35.855"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>xpath=//option[contains(text(),'${year}')]</arg>
+<arg>xpath=//option[contains(text(),'${variable1}')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221228 16:52:30.477" level="INFO">Clicking element 'xpath=//option[contains(text(),'2016')]'.</msg>
-<status status="PASS" starttime="20221228 16:52:30.468" endtime="20221228 16:52:30.791"/>
+<msg timestamp="20221229 13:04:35.881" level="INFO">Clicking element 'xpath=//option[contains(text(),'May')]'.</msg>
+<status status="PASS" starttime="20221229 13:04:35.876" endtime="20221229 13:04:35.951"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20221228 16:52:32.857" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20221228 16:52:30.855" endtime="20221228 16:52:32.858"/>
+<msg timestamp="20221229 13:04:37.957" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221229 13:04:35.955" endtime="20221229 13:04:37.959"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//select[@id='year']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221229 13:04:37.990" level="INFO">Clicking element 'xpath=//select[@id='year']'.</msg>
+<status status="PASS" starttime="20221229 13:04:37.984" endtime="20221229 13:04:38.123"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221229 13:04:40.126" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221229 13:04:38.125" endtime="20221229 13:04:40.132"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//option[contains(text(),'${variable2}')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221229 13:04:40.153" level="INFO">Clicking element 'xpath=//option[contains(text(),'2022')]'.</msg>
+<status status="PASS" starttime="20221229 13:04:40.143" endtime="20221229 13:04:40.216"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221229 13:04:43.220" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20221229 13:04:40.218" endtime="20221229 13:04:43.226"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
-<arg>xpath=//input[@id='search']</arg>
-<arg>${picture}</arg>
+<arg>name=employeeId</arg>
+<arg>${variable3}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221228 16:52:32.861" level="INFO">Typing text 'avatar.png' into text field 'xpath=//input[@id='search']'.</msg>
-<msg timestamp="20221228 16:52:33.178" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20221228 16:52:33.178" level="FAIL">WebDriverException: Message: unknown error: path is not absolute: avatar.png
-  (Session info: chrome=108.0.5359.125)
-Stacktrace:
-Backtrace:
-	(No symbol) [0x0021F243]
-	(No symbol) [0x001A7FD1]
-	(No symbol) [0x0009D04D]
-	(No symbol) [0x000A477E]
-	(No symbol) [0x000C622A]
-	(No symbol) [0x000E858C]
-	(No symbol) [0x000C2BFF]
-	(No symbol) [0x000E8804]
-	(No symbol) [0x000FC9EB]
-	(No symbol) [0x000E8386]
-	(No symbol) [0x000C163C]
-	(No symbol) [0x000C269D]
-	GetHandleVerifier [0x004B9A22+2655074]
-	GetHandleVerifier [0x004ACA24+2601828]
-	GetHandleVerifier [0x002C8C0A+619850]
-	GetHandleVerifier [0x002C7830+614768]
-	(No symbol) [0x001B05FC]
-	(No symbol) [0x001B5968]
-	(No symbol) [0x001B5A55]
-	(No symbol) [0x001C051B]
-	BaseThreadInitThunk [0x76AC00F9+25]
-	RtlGetAppContainerNamedObjectPath [0x776B7BBE+286]
-	RtlGetAppContainerNamedObjectPath [0x776B7B8E+238]
-	(No symbol) [0x00000000]
-</msg>
-<status status="FAIL" starttime="20221228 16:52:32.860" endtime="20221228 16:52:33.205"/>
+<msg timestamp="20221229 13:04:43.238" level="INFO">Typing text '343554' into text field 'name=employeeId'.</msg>
+<status status="PASS" starttime="20221229 13:04:43.234" endtime="20221229 13:04:43.436"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20221228 16:52:33.222" endtime="20221228 16:52:33.223"/>
+<msg timestamp="20221229 13:04:45.439" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221229 13:04:43.437" endtime="20221229 13:04:45.446"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//input[@id='groupInsurance']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221229 13:04:45.480" level="INFO">Clicking element 'xpath=//input[@id='groupInsurance']'.</msg>
+<status status="PASS" starttime="20221229 13:04:45.461" endtime="20221229 13:04:45.642"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221229 13:04:47.651" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221229 13:04:45.647" endtime="20221229 13:04:47.654"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=groupInsurance</arg>
+<arg>${variable4}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221229 13:04:47.687" level="INFO">Typing text '0' into text field 'name=groupInsurance'.</msg>
+<status status="PASS" starttime="20221229 13:04:47.677" endtime="20221229 13:04:47.816"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221229 13:04:49.822" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221229 13:04:47.818" endtime="20221229 13:04:49.827"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=benevolentFund</arg>
+<arg>${variable5}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221229 13:04:49.856" level="INFO">Typing text '45' into text field 'name=benevolentFund'.</msg>
+<status status="PASS" starttime="20221229 13:04:49.843" endtime="20221229 13:04:50.012"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221229 13:04:52.018" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221229 13:04:50.014" endtime="20221229 13:04:52.022"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=gPFAmount</arg>
+<arg>${variable6}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221229 13:04:52.047" level="INFO">Typing text '0' into text field 'name=gPFAmount'.</msg>
+<status status="PASS" starttime="20221229 13:04:52.030" endtime="20221229 13:04:52.185"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221229 13:04:54.197" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221229 13:04:52.193" endtime="20221229 13:04:54.199"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=gPFAmountAccountNo</arg>
+<arg>${variable7}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221229 13:04:54.207" level="INFO">Typing text '0' into text field 'name=gPFAmountAccountNo'.</msg>
+<status status="PASS" starttime="20221229 13:04:54.203" endtime="20221229 13:04:54.339"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221229 13:04:57.342" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20221229 13:04:54.341" endtime="20221229 13:04:57.342"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=incomeTax</arg>
+<arg>${variable8}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221229 13:04:57.353" level="INFO">Typing text '0' into text field 'name=incomeTax'.</msg>
+<status status="PASS" starttime="20221229 13:04:57.348" endtime="20221229 13:04:57.506"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221229 13:05:00.515" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20221229 13:04:57.510" endtime="20221229 13:05:00.517"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=houseRent</arg>
+<arg>${variable9}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221229 13:05:00.529" level="INFO">Typing text '45' into text field 'name=houseRent'.</msg>
+<status status="PASS" starttime="20221229 13:05:00.522" endtime="20221229 13:05:00.678"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221229 13:05:02.684" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221229 13:05:00.682" endtime="20221229 13:05:02.686"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=houseRentMaintenance</arg>
+<arg>${variable10}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221229 13:05:02.705" level="INFO">Typing text '0' into text field 'name=houseRentMaintenance'.</msg>
+<status status="PASS" starttime="20221229 13:05:02.694" endtime="20221229 13:05:02.868"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221229 13:05:04.876" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221229 13:05:02.872" endtime="20221229 13:05:04.879"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=electricalBill</arg>
+<arg>${variable11}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221229 13:05:04.905" level="INFO">Typing text '0' into text field 'name=electricalBill'.</msg>
+<status status="PASS" starttime="20221229 13:05:04.890" endtime="20221229 13:05:05.050"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221229 13:05:07.059" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221229 13:05:05.056" endtime="20221229 13:05:07.060"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=waterAndSewerageBill</arg>
+<arg>${variable12}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221229 13:05:07.068" level="INFO">Typing text '34' into text field 'name=waterAndSewerageBill'.</msg>
+<status status="PASS" starttime="20221229 13:05:07.063" endtime="20221229 13:05:07.202"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221229 13:05:09.209" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221229 13:05:07.206" endtime="20221229 13:05:09.210"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=gas</arg>
+<arg>${variable13}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221229 13:05:09.221" level="INFO">Typing text '0' into text field 'name=gas'.</msg>
+<status status="PASS" starttime="20221229 13:05:09.215" endtime="20221229 13:05:09.357"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221229 13:05:11.360" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221229 13:05:09.359" endtime="20221229 13:05:11.360"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=mtCharge</arg>
+<arg>${variable14}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221229 13:05:11.366" level="INFO">Typing text '0' into text field 'name=mtCharge'.</msg>
+<status status="PASS" starttime="20221229 13:05:11.363" endtime="20221229 13:05:11.503"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221229 13:05:13.510" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221229 13:05:11.507" endtime="20221229 13:05:13.514"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=stampFee</arg>
+<arg>${variable15}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221229 13:05:13.535" level="INFO">Typing text '0' into text field 'name=stampFee'.</msg>
+<status status="PASS" starttime="20221229 13:05:13.522" endtime="20221229 13:05:13.672"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221229 13:05:15.675" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221229 13:05:13.674" endtime="20221229 13:05:15.679"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
-<arg>xpath=//input[@id='btnSave']</arg>
+<arg>id=btnSaveDeduction</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20221228 16:52:33.224" endtime="20221228 16:52:33.225"/>
+<msg timestamp="20221229 13:05:15.699" level="INFO">Clicking button 'id=btnSaveDeduction'.</msg>
+<status status="PASS" starttime="20221229 13:05:15.687" endtime="20221229 13:05:15.828"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
-<arg>2s</arg>
+<arg>4s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20221228 16:52:33.226" endtime="20221228 16:52:33.227"/>
-</kw>
-<kw name="Click Button" library="SeleniumLibrary">
-<arg>xpath=//button[contains(text(),'OK')]</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20221228 16:52:33.228" endtime="20221228 16:52:33.228"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20221228 16:52:33.229" endtime="20221228 16:52:33.230"/>
+<msg timestamp="20221229 13:05:19.832" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20221229 13:05:15.831" endtime="20221229 13:05:19.832"/>
 </kw>
 <kw name="Close All Browsers" library="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="NOT RUN" starttime="20221228 16:52:33.231" endtime="20221228 16:52:33.232"/>
+<status status="PASS" starttime="20221229 13:05:19.835" endtime="20221229 13:05:26.381"/>
 </kw>
-<status status="FAIL" starttime="20221228 16:51:17.801" endtime="20221228 16:52:33.245">WebDriverException: Message: unknown error: path is not absolute: avatar.png
-  (Session info: chrome=108.0.5359.125)
-Stacktrace:
-Backtrace:
-	(No symbol) [0x0021F243]
-	(No symbol) [0x001A7FD1]
-	(No symbol) [0x0009D04D]
-	(No symbol) [0x000A477E]
-	(No symbol) [0x000C622A]
-	(No symbol) [0x000E858C]
-	(No symbol) [0x000C2BFF]
-	(No symbol) [0x000E8804]
-	(No symbol) [0x000FC9EB]
-	(No symbol) [0x000E8386]
-	(No symbol) [0x000C163C]
-	(No symbol) [0x000C269D]
-	GetHandleVerifier [0x004B9A22+2655074]
-	GetHandleVerifier [0x004ACA24+2601828]
-	GetHandleVerifier [0x002C8C0A+619850]
-	GetHandleVerifier [0x002C7830+614768]
-	(No symbol) [0x001B05FC]
-	(No symbol) [0x001B5968]
-	(No symbol) [0x001B5A55]
-	(No symbol) [0x001C051B]
-	BaseThreadInitThunk [0x76AC00F9+25]
-	RtlGetAppContainerNamedObjectPath [0x776B7BBE+286]
-	RtlGetAppContainerNamedObjectPath [0x776B7B8E+238]
-	(No symbol) [0x00000000]
-</status>
+<status status="PASS" starttime="20221229 13:03:41.986" endtime="20221229 13:05:26.391"/>
 </test>
-<status status="FAIL" starttime="20221228 16:51:16.833" endtime="20221228 16:52:33.303"/>
+<status status="PASS" starttime="20221229 13:03:40.967" endtime="20221229 13:05:26.417"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="EmployeeCreation">EmployeeCreation</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Allowancededuction">Allowancededuction</stat>
 </suite>
 </statistics>
 <errors>

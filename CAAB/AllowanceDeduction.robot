@@ -49,7 +49,7 @@ login
     Location Should Be    http://192.168.1.9:8080/caab/hrpAllowanceDeduction
     
     ${input}     Get File    AllowanceDeduction.txt
-    ${variable1}    ${variable2}    ${variable3}    ${variable4}    ${variable5}    ${variable6}    ${variable7}    ${variable8}    ${variable9}    ${variable10}    ${variable11}    ${variable12}    ${variable13}    ${variable14}    ${variable15}=  Split String  ${input}
+    ${variable1}    ${variable2}    ${variable3}    ${variable4}    ${variable5}    ${variable6}    ${variable7}    ${variable8}    ${variable9}    ${variable10}    ${variable11}    ${variable12}    ${variable13}    ${variable14}    ${variable15}=  Split String  ${input}    \n
     
     Sleep    4s
 

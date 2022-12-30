@@ -3,13 +3,21 @@ from tkinter import *
 from tkinter import ttk
 import robot
 from PictureUpload import runner1
+import os
 
 def run2():
      robot.run("EmployeeCreation.robot")
 
+# def runner2():
+#     global picture
+#     picture=r'avatar.png'
+
 def runner2():
     global picture
-    picture=r'avatar.png'
+    current_dir=os.getcwd()
+    image_name='avatar.png'
+    picture=os.path.join(current_dir,image_name)
+    print(picture)
     
     def get_variables():
         
@@ -19,7 +27,7 @@ def runner2():
         year=header_selection.get()
 
         print(english,bangla)
-        file= open("F:/CAAB/EmployeeCreation.txt", "w")
+        file= open("F:/CAAB/EmployeeCreation.txt", "w", encoding='utf-8')
         file.write( english)
         file.write("\n")
         file.write(bangla)
